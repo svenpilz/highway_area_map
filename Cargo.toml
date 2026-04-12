@@ -1,0 +1,17 @@
+[package]
+name = "highway_area_map"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+bevy = { version="0.18.1", default-features = false, features = ["2d_bevy_render", "default_app", "default_platform"] }
+bevy_pancam = "0.20.0"
+bevy_prototype_lyon = "0.16"
+clap = { version = "4.0", features = ["derive"] }
+console_error_panic_hook = "0.1"
+osmpbfreader = "0.19"
+wasm-bindgen = "0.2"
+web-sys = { version = "0.3", features = ["Window", "Document", "HtmlElement", "console", "DragEvent", "DataTransfer", "FileList", "File"] }
